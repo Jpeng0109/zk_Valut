@@ -149,7 +149,11 @@ export default async function VaultDetailPage({ searchParams }: Props) {
           </div>
 
           <aside className="lg:pt-2">
-            <DepositWithdrawPanel />
+            <DepositWithdrawPanel
+              vaultId={v.id}
+              asset={v.asset}
+              apy={v.apyNumeric}
+            />
           </aside>
         </div>
 
